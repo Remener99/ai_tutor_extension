@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "AI-тьютор для Synergy LMS",
+  "version": "0.1.0",
+  "description": "Помогает студентам планировать обучение и глубже усваивать материал",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://lms.synergy.ru/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
